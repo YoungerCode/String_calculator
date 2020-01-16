@@ -1,0 +1,4 @@
+## Pytest 
+
+pip install -U pytest to run the tests
+
