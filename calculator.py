@@ -9,7 +9,7 @@ def add(num):
     try:
         int(num[-1])
     except:
-        return "Not ok"
+        return "ERROR: invalid input"
        
     for each_letter in re.findall(r"-?\d+", num):
         try:
@@ -22,6 +22,6 @@ def add(num):
             continue
             
     if len(neg_num) > 0:
-        raise Exception('negatives not allowed: {}'.format(neg_num))
+        raise Exception('ERROR: negatives not allowed: {}'.format(neg_num))
 
     return sum(num_list)
