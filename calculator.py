@@ -13,7 +13,7 @@ def add(num):
        
     for each_letter in re.findall(r"-?\d+", num):
         try:
-            if int(each_letter) > 1000:
+            if int(each_letter) >= 1000:
                 each_letter = 0
             if int(each_letter) < 0:
                 neg_num.append(each_letter)
