@@ -1,4 +1,3 @@
-## Pytest 
+from setuptools import setup, find_packages
 
-pip install -U pytest to run the tests
-
+setup(name="my_package", packages=find_packages())
