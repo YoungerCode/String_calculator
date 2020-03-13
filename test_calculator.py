@@ -1,4 +1,4 @@
-from calculator import *
+from calculator import add
 import pytest
 
 #Test case 1.1: Test an empty string
@@ -21,9 +21,6 @@ def test_add_unknown_amount_of_numbers():
 def test_add_new_lines():
     assert add("1\n2,3") == 6
     
-#Test case 3.2: Test handling new lines error
-def test_add_new_lines_error():
-    assert add("1\n") == "Not ok"
     
 #Test case 4.1: Test support different delimiters
 def test_add_different_delimiters():
